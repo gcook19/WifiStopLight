@@ -51,7 +51,9 @@ def greenLight():
 
 @app.route('/cycle', methods=['POST'])
 def run():
- #   def regular_cycle():
+     green.off()
+     yellow.off()
+     red.off()
      temp = True
      while temp:
          if temp == False:
